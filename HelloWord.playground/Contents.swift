@@ -147,7 +147,22 @@ do {
     try makeASandwich()
 }
 catch {
-    ??LKJ}
+        print("Algo Fallo")
+}
 
+//Aserciones (debug) y precondiciones (build)
+let agex = -5
+//assert(agex>=0, "La edad de una persona no puede ser negativa")
 
+precondition(agex>=0, "La edad de una persona no puede ser negativa")
+		
+if agex > 10{
+    print("PUedes subir a la montana rusa")
+}
+else if agex >= 0{
+    print("Eres demasiado peque;o para subir a la montana rusa")
+}
+else {
+    assertionFailure("La edad de una persona no uede ser negativa")
+}
 
